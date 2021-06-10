@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="nav">
+        <div><img src="./images/nav1.jpg" alt=""></div>
+        <div class="first">首页</div>
+        <div>榜单</div>
+        <div>歌手</div>
+        <div>下载酷我客户端</div>
+        <div class="nav-inner">
+            <div>
+                <div class="pic"></div>
+                <div>美女秀</div>
+            </div>
+            <div>
+                <div class="pic"></div>
+                <div>酷我耳机</div>
+            </div>
+            <div>
+                <div class="pic"></div>
+                <div>VIP会员</div>
+            </div>
+            <div>
+                <div class="pic"></div>
+                <div>i听</div>
+            </div>
+            <div>更多服务</div>
+            <div>登录</div>
+        </div>
+        <div>
+            <span>^</span>
+            <input type="text" class="nav2" placeholder="找到好音乐">
+        </div>
+    </div>
+    <div class="body">
+        <div class="left">
+            <div class="top">
+                <div class="title">喜羊羊</div>
+                <div class="top-middle">
+                    <div class="sing">
+                        <span>专辑：</span>
+                        <span>儿歌大全</span>
+                    </div>
+                    <div class="sing">
+                        <span>歌手：</span>
+                        <span>华语群星</span>
+                    </div>
+                    <div class="sing">
+                        <span>分享</span>
+                    </div>
+                    <div class="sing">
+                        <div class="commit">
+                            <img src="./images/commit.jpg" alt="">
+                        </div>
+                        <span>评论</span>
+                    </div>
+                </div>
+                <div class="top-bottom">
+                    <div class="song">上传时间：2015-10-02</div>
+                    <div class="song">歌曲来源：民大相思湖网球社</div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div>喜羊羊美羊羊懒羊羊沸羊羊</div>
+                <div>慢羊羊软绵绵红太狼灰太狼</div>
+                <div>别看我只是一只羊</div>
+                <div>绿草因为我变的更香</div>
+                <div>天空因为我变的更蓝</div>
+                <div>白云因为我变的柔软</div>
+                <div>别看我只是一只羊</div>
+                <div>羊儿的聪明难以想像</div>
+                <div>天再高心情一样奔放</div>
+                <div>每天都追赶太阳</div>
+                <div>有什么难题去牵绊我都不会去心伤</div>
+                <div>有什么危险在我面前也不会去慌乱</div>
+                <div>就算有狼群把我追捕也当做游戏一场</div>
+                <div>在什么时间都爱开心笑容都会飞翔</div>
+                <div>就算会摔倒站得起来永远不会沮丧</div>
+                <div>在所有天气拥有叫人大笑的力量</div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="right-top">
+                <div class="outsider">
+                    <div id="outside"></div>
+                </div>
+                <div class="middle"></div>
+                <div class="inside"></div>
+            </div>
+            <div class="right-body">
+                <div ></div>
+                <audio controls autoplay="true" id="myaudio">
+                    <source src="./images/古倩敏 _ 杨沛宜 - 别看我只是一只羊.mp3"></source>
+                </audio>
+                <div class="control">
+                    <div id="playBtn"></div>
+                </div>
+                <div class="process">
+                    <div id="processBar">
+                        <div id="my_processBar"></div>
+                        <div id="pointBtn"></div>
+                    </div>
+                </div>
+                <div class="time">
+                    <p id="playTime">00:00</p>
+                </div>
+                <div class="mute">
+                    <div id="mymute"></div>
+                </div>
+            </div>
+            <div class="right-bottom">
+                <div class="download"></div>
+                <div class="word">
+                    <p>免费下载这首歌</p>
+                </div>
+            </div>
+            <div class="information">
+                <div class="guo">
+                    <img src="./images/guo.jpg" alt="">
+                </div>
+                <div class="chat">
+                    <div class="chat_top">郭子仪--H5班</div>
+                    <div class="chat_bottom">
+                        <div class="gif">
+                            <img src="./images/gif.gif" alt="">
+                        </div>
+                        <div class="music_name">喜羊羊与灰太狼</div>
+                        <div class="goto">去现场></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="discuss_title">
+        <div>评论</div>
+        <div>1703条评论</div>
+        <div class="underline1"></div>
+    </div>
+    <div id="discuss">
+        <div class="discuss_top">
+            <div id="guo"></div>
+            <div id="discussion">
+                <textarea placeholder="分享你的音乐见解" id="discussions"></textarea>
+            </div>               
+        </div>
+        <div class="discuss_bottom">
+            <img src="./images/commenticon.png" alt="">
+            <div id="count">已输入0个字</div>
+            <div id="comment">评论</div>
+        </div>
+    </div>
+    <div class="commentary">
+        <div>精彩评论</div>
+        <div class="underline2"></div>
+    </div>
+    <div id="content">
+        <div class="first1">
+            <img src="./images/guo.jpg" class="one">
+            <div class="contents1">
+                <div class="content1_top">
+                    <div>郭子仪</div>
+                    <div>分享</div>
+                </div>
+                <div class="content1_bottom">
+                    <div class="content1_left">
+                        <ul></ul>
+                    </div>
+                    <div class="content1_right">
+                        <div>删除</div>
+                        <div>163</div>
+                        <img src="./images/bg2.jpg" alt="">
+                        <div>回复</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="second">
+            <img src="./images/rabbit.jpg" class="two">
+            <div class="contents2">
+                <div class="content2_top">
+                    <div>Forget</div>
+                    <div>分享</div>
+                </div>
+                <div class="content2_bottom">
+                    <div class="content2_left">
+                        <ul></ul>
+                    </div>
+                    <div class="content2_right">
+                        <div>149</div>
+                        <img src="./images/bg2.jpg" alt="">
+                        <div>回复</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="third">
+            <img src="./images/picture.jpg" class="three">
+            <div class="contents3">
+                <div class="content3_top">
+                    <div>亚里士多德</div>
+                    <div>分享</div>
+                </div>
+                <div class="content3_bottom">
+                    <div class="content3_left">
+                        <ul></ul>
+                    </div>
+                    <div class="content3_right">
+                        <div>109</div>
+                        <img src="./images/bg2.jpg" alt="">
+                        <div>回复</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="paging">
+        <div id="prev"><</div>
+        <div class="numb"><a href="">1</a></div>
+        <div class="num"><a href="">2</a></div>
+        <div class="numb"><a href="">3</a></div>
+        <div class="numb"><a href="">...</a></div>
+        <div class="numb"><a href="">17</a></div>
+        <div id="next">></div>
+    </div>
+</body>
+<script>
+    //得到要操作的网页元素
+    var btn = document.getElementById("playBtn");
+    var prograssBar = document.getElementById("processBar");
+    var currentProgress = document.getElementById("my_processBar");
+    var timer = document.getElementById("playTime");
+    var muteBtn = document.getElementById("mymute");
+    var mymusic = document.getElementById("myaudio");
+    var point = document.getElementById("pointBtn");
+    var rotate = document.getElementById("outside");
+    var comment = document.getElementById("comment");
+    var discuss = document.getElementById("discussions");
+    var prev = document.getElementById("prev");
+    var next = document.getElementById("next");
+    var number1;
+    var count1 = 0;
+    var count2 = 0;
+    //给元素绑定特定的事件
+    btn.onclick = function (){
+        if(mymusic.paused){
+            this.style.backgroundPosition ="-207px -88px";
+            mymusic.play();
+            rotate.style.animation = "rotate1";
+            rotate.style.animationDuration = 5+"s";
+            rotate.style.animationIterationCount = "infinite";
+            rotate.style.animationTimingFunction = "linear";
+            intervalId = setInterval(changeProgress,1000);
+        }
+        else{
+            clearInterval(intervalId);
+            this.style.backgroundPosition ="-110px -88px";
+            mymusic.pause();
+            rotate.style.animation = "rotate2";
+            rotate.style.animationDuration = 5+"s";
+            rotate.style.animationIterationCount = "infinite";
+            rotate.style.animationTimingFunction = "linear";
+        }
+        
+    }
+    //定时执行切换当前播放进度
+    function changeProgress(){
+        var currentTime = mymusic.currentTime;
+        var duration = mymusic.duration;
+        //当前播放的时间显示
+        var minute = parseInt(currentTime/60);
+        var second = parseInt(currentTime%60);
+        minute = minute >= 10 ? minute : ("0"+minute);
+        second = second >= 10 ? second : ("0"+parseInt(second));
+        timer.innerHTML = minute +":"+second;
+        //播放进度条效果
+        var barWidth = prograssBar.offsetWidth;
+        var rate = currentTime/duration;
+        currentProgress.style.width = barWidth*rate + "px";
+        point.style.left = barWidth*rate + "px";
+    }
+    //设置是否静音
+    muteBtn.onclick = function(){
+        if(mymusic.muted){
+            mymusic.muted = false;
+        }
+        else{
+            mymusic.muted = true;
+        }
+    }
+    //添加到本地存储
+    comment.onclick = function (){
+        var location = localStorage['location'];
+        if(location == null || location == ""){
+			location = '[]';
+		}
+        location = JSON.parse(location);
+		var commentObj = {
+			timer:time(),
+			contentce : discuss.value
+		}         
+		location.push(commentObj);
+		location = JSON.stringify(location);
+		localStorage['location'] = location;
+        getLocation();
+        discuss.value ="";
+    }
+    function time(){
+        var now = new Date();
+        var year = now.getFullYear();   
+    	var month = now.getMonth();
+    	var date = now.getDate();
+		var hours = now.getHours();
+    	var minutes = now.getMinutes();
+        var seconds = now.getSeconds();
+        return year+"-"+(month+1)+"-"+date+" "+hours+":"+minutes+":"+seconds;
+    }
+    //页面显示
+    function getLocation(){
+        var location = localStorage['location'];
+        location = JSON.parse(location);
+        for(var j=0;j<3;j++){
+            document.getElementsByTagName("ul")[j].innerHTML = " ";
+            for(var i=0; i<2;i++){
+                var liNode = document.createElement("li");
+                if(i == 0){
+                    liNode.innerHTML =location[location.length-1-j]['contentce'];
+                }
+                else{
+                    liNode.innerHTML =location[location.length-1-j]['timer'];
+                }
+                document.getElementsByTagName("ul")[j].appendChild(liNode);
+            }
+        }
+	}
+    window.onload = function(){
+		getLocation();
+	}
+    //页面切换
+    next.onclick = function(){
+        for(var j=0;j<3;j++){
+            document.getElementsByTagName("ul")[j].innerHTML = " ";
+        }
+        var location = localStorage['location'];
+        location = JSON.parse(location);
+        count1++;
+        number1 = location.length-3*count1;
+        if(number1 <= 2){
+            count1--;
+            for(var j=0;j<3;j++){
+                document.getElementsByTagName("ul")[j].innerHTML = " ";
+                for(var i=0; i<2;i++){
+                    var liNode = document.createElement("li");
+                    if(i == 0){
+                        liNode.innerHTML =location[2-j]['contentce'];
+                    }
+                    else{
+                        liNode.innerHTML =location[2-j]['timer'];
+                    }
+                    document.getElementsByTagName("ul")[j].appendChild(liNode);
+                }
+            }
+        }
+        else{
+            for(var j=0;j<3;j++){
+                document.getElementsByTagName("ul")[j].innerHTML = " ";
+                for(var i=0; i<2;i++){
+                    var liNode = document.createElement("li");
+                    if(i == 0){
+                        liNode.innerHTML =location[number1-1-j]['contentce'];
+                    }
+                    else{
+                        liNode.innerHTML =location[number1-1-j]['timer'];
+                    }
+                    document.getElementsByTagName("ul")[j].appendChild(liNode);
+                }
+            }
+        }
+    }
+    prev.onclick = function(){
+        var location = localStorage['location'];
+        location = JSON.parse(location);
+        number1 = number1+3*1;
+        if(number1 >= location.length-3){
+            number1 =number1-3*1;
+            count1 = 1;
+            getLocation();
+        }
+        else{
+            for(var j=0;j<3;j++){
+            document.getElementsByTagName("ul")[j].innerHTML = " ";
+            for(var i=0; i<2;i++){
+                var liNode = document.createElement("li");
+                if(i == 0){
+                    liNode.innerHTML =location[number1-1-j]['contentce'];
+                }
+                else{
+                    liNode.innerHTML =location[number1-1-j]['timer'];
+                }
+                document.getElementsByTagName("ul")[j].appendChild(liNode);
+            }
+        }
+        }
+    }
+</script>
+</html>

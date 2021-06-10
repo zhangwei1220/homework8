@@ -1,0 +1,676 @@
+.nav{
+    width: 100%;
+    height:50px;
+    background: black;
+    color:white;
+    text-align:center;
+    line-height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.first{
+    color:#ffcd2d;
+}
+.nav-inner{
+    width:600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.nav-inner div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.pic{
+    width:17px;
+    height:17px;
+    background: url(../images/bg.png);
+    background-position:-230px -25px;
+    margin-top: 17px;
+}
+.nav :nth-child(7){
+    display: flex;
+    flex-direction: row;
+    margin-top: 7px;
+    margin-right: 25px;
+}
+.nav2{
+    margin-top:7px;
+    width:190px;
+    height:25px;
+    background: url(../images/nav2.png) no-repeat;
+    background-size: cover;
+    font-size: 15px;
+    border:none;
+}
+.body{
+    width: 100%;
+    height:700px;
+    display: flex;
+    flex-direction: row;
+}
+/* 歌词 */
+.left{
+    width:50%;
+}
+.top{
+    width:100%;
+    height:120px;
+    position: relative;
+}
+.title{
+    margin-top: 30px;
+    width:100%;
+    text-align: center;
+    font-size:30px;
+    margin-bottom: 30px;
+}
+.top-middle{
+    width:500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left:200px;
+    font-size:10px;
+    text-align: center;
+}
+.sing{
+    display: flex;
+    flex-direction: row;
+    margin-left: 15px;
+}
+.sing :nth-child(2){
+    color:#ffcd2d;
+}
+.commit{
+    width:14px;
+    height:14px;
+    margin-right: 5px;
+}
+.top-bottom{
+    width:500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top:100px;
+    left:190px;
+    font-size:10px;
+    text-align: center;
+}
+.song{
+    display: flex;
+    flex-direction: row;
+    margin-left: 15px;
+}
+.bottom{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+    height:400px;
+    overflow: auto;
+}
+.bottom :nth-child(5){
+    color:#ffcd2d;
+}
+.right{
+    width:50%;
+}
+.right-top{
+    margin: 40px auto;
+    width:330px;
+    height:330px;
+    position:relative;
+}
+/* 动画 */
+@keyframes rotate1{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+@keyframes rotate2{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(0deg);
+    }
+}
+.outsider{
+    width:312px;
+    height:312px;
+    border-radius: 50%;
+    border: 1px solid rgb(219, 217, 217);
+}
+#outside{
+    width:300px;
+    height:300px;
+    border-radius: 50%;
+    margin: 5px auto;
+    background: url(../images/musicbg.jpg) no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+.middle{
+    background: rgba(250, 248, 248,0.6);
+    width:50px;
+    height:50px;
+    border: 1px solid rgb(207, 205, 205);
+    border-radius: 50%;
+    z-index: 2;
+    position: absolute;
+    top:120px;
+    left:125px;
+}
+.inside{
+    background: white;
+    width:20px;
+    height:20px;
+    border: 1px solid rgb(207, 205, 205);
+    border-radius: 50%;
+    z-index: 3;
+    position: absolute;
+    top:135px;
+    left:140px;
+}
+/* 播放器 */
+.right-body{
+    width:500px;
+    height:50px;
+    margin:30px auto;
+    display: flex;
+    flex-direction: row;
+    position:relative;
+}
+#myaudio{
+    display: none;
+}
+.control{
+    width: 41px;
+	height: 41px;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+#playBtn{
+    width: 41px;
+	height: 41px;
+    background:url(../images/download.jpg);
+    background-position: -110px -88px;
+}
+.process{
+    width:320px;
+
+}
+.process #processBar{
+    width: 320px;
+	height: 4px;
+    position: relative;
+    background:rgb(221, 220, 220);
+    margin:25px 0 0 15px;
+    border-radius: 15px;
+}
+.process #my_processBar{
+    width:0px;
+    height:4px;
+    background: #ffcd2d;
+}
+.process #pointBtn{
+    width:10px;
+    height:11px;
+    background: url(../images/download.jpg) -23px 0;
+    position: absolute;
+    top:-3px;
+}
+.time{
+    margin-left: 30px;
+    font-size: 15px;
+    margin-top: 2px;
+}
+.mute{
+    width: 24px;
+	height: 19px;
+    margin-top: 17px;
+    margin-left: 20px;
+}
+#mymute{
+    width: 24px;
+	height: 19px;
+    background:url(../images/download.jpg) -43px 0;
+}
+.right-bottom{
+    width:200px;
+    height:40px;
+    margin: 50px auto;
+    background: url(../images/download.jpg) 0px 40px;
+    display: flex;
+    flex-direction: row;
+}
+.download{
+    width:18px;
+    height:16px;
+    background: url(../images/download.jpg);
+    margin-top: 15px;
+    margin-left: 30px;
+}
+.word p{
+    text-align: center;
+    margin: 10px auto;
+}
+.information{
+    width:360px;
+    margin:20px auto;
+    display: flex;
+    flex-direction: row;
+}
+.guo img{
+    width:60px;
+    height:60px;
+}
+.chat{
+    display: flex;
+    flex-direction: column;
+    width:250px;
+    height:55px;
+    background: url(../images/chatbg.jpg) no-repeat;
+    margin-top: 3px;
+    margin-left: 5px;
+}
+.chat_top{
+    font-size:14px;
+    color:rgb(199, 197, 197);
+    margin-top: 7px;
+    margin-left: 20px;
+}
+.chat_bottom{
+    width:230px;
+    display: flex;
+    flex-direction:row;
+    font-size:14px;
+    margin-top:5px;
+    margin-left: 20px;
+    position: relative;
+}
+.gif img{
+    width:12px;
+    height:12px;
+}
+.music_name{
+    color:rgb(65, 33, 95);
+}
+.goto{
+    position: absolute;
+    right:10px;
+    color: blueviolet;
+}
+.discuss_title{
+    width:100%;
+    height:30px;
+    display: flex;
+    flex-direction:row;
+    position:relative;
+}
+.discuss_title :nth-child(1){
+    position: absolute;
+    left: 150px;
+}
+.discuss_title :nth-child(2){
+    position: absolute;
+    left: 200px;
+    font-size: 13px;
+    margin-top: 5px;
+}
+.underline1{
+    width:985px;
+    border-top:1px solid rgb(219, 217, 217);
+    position:absolute;
+    top:25px;
+    left: 130px;
+}
+#discuss{
+    width: 100%;
+    height:200px;
+    display: flex;
+    flex-direction:column;
+}
+.discuss_top{
+    height:100px;
+    display: flex;
+    flex-direction:row;
+    position: relative;
+}
+#guo{
+    width:50px;
+    height:50px;
+    background: url(../images/guo.jpg);
+    background-size: cover;
+    position: absolute;
+    top:10px;
+    left: 150px;
+}
+#discussion{
+    width:900px;
+    height:100px;
+    position: absolute;
+    top:10px;
+    left: 210px;
+    border: 1px solid rgb(219, 217, 217);
+}
+#discussion :nth-child(1){
+    width:900px;
+    height:100px;
+    resize: none;
+    outline:none;
+    border: 1px solid rgb(219, 217, 217);
+}
+.discuss_bottom{
+    width:1150px;
+    height:30px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction:row;
+    position: relative;
+    font-size:12px;
+}
+.discuss_bottom img{
+    height:20px;
+    width:20px;
+    position: absolute;
+    left: 210px;
+}
+.discuss_bottom div{
+    margin-top:5px;
+    position: absolute;
+    right: 110px;
+}
+#comment{
+    height:25px;
+    width:55px;
+    background: rgb(253, 159, 35);
+    font-size:15px;
+    text-align: center;
+    line-height: 25px;
+    color: white;
+    margin-top:0;
+    position: absolute;
+    right: 35px;
+}
+.commentary{
+    width:100%;
+    height:25px;
+    position: relative;
+}
+.commentary div{
+    position:absolute;
+    left:160px;
+}
+.underline2{
+    width:985px;
+    border-top:1px solid rgb(219, 217, 217);
+    position:absolute;
+    top:25px;
+    left: 100px;
+}
+#content{
+    width:100%;
+    height:350px;
+}
+ul{
+    padding: 0;
+    margin-top: 5px;
+}
+li{
+    list-style: none;
+}
+ul :nth-child(2){
+    margin-top: 10px;
+}
+.first1{
+    width:1200px;
+    height:100px;
+    display: flex;
+    flex-direction:row;
+    position: relative;
+}
+.one{
+    width:70px;
+    height:70px;
+    position: absolute;
+    left:150px;
+    margin-top: 10px;
+}
+.contents1{
+    width:800px;
+    height:100px;
+    display: flex;
+    flex-direction:column;
+    position: absolute;
+    left:230px;
+    margin-top: 10px;
+}
+.content1_top{
+    width:800px;
+    height:20px;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+.content1_top :nth-child(n){
+    width:80px;
+    height:20px;
+    font-size: 13px;
+    color:#ffcd2d;
+}
+.content1_top :nth-child(2){
+    color: black;
+}
+.content1_bottom{
+    width:800px;
+    height:60px;
+    display: flex;
+    flex-direction:row;
+    font-size: 13px;
+    color: black;
+}
+.content1_left{
+    width:600px;
+    height:60px;
+}
+.content1_right{
+    display: flex;
+    flex-direction:row;
+    margin-top: 40px;
+}
+.content1_right img{
+    width:15px;
+    height:15px;
+    margin-top: 0;
+}
+.content1_right :nth-child(n){
+    margin-right: 10px;
+}
+.content1_right :nth-child(1){
+    color:rgb(180, 86, 19);
+    margin-left: 25px;
+}
+.second{
+    width:1200px;
+    height:100px;
+    display: flex;
+    flex-direction:row;
+    position: relative;
+}
+.two{
+    width:70px;
+    height:70px;
+    position: absolute;
+    left:150px;
+    margin-top: 10px;
+}
+.contents2{
+    width:800px;
+    height:100px;
+    display: flex;
+    flex-direction:column;
+    position: absolute;
+    left:230px;
+    margin-top: 10px;
+}
+.content2_top{
+    width:800px;
+    height:20px;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+.content2_top :nth-child(n){
+    width:80px;
+    height:20px;
+    font-size: 13px;
+    color:#ffcd2d;
+}
+.content2_top :nth-child(2){
+    color: black;
+}
+.content2_bottom{
+    width:800px;
+    height:60px;
+    display: flex;
+    flex-direction:row;
+    font-size: 13px;
+    color: black;
+}
+.content2_left{
+    width:600px;
+    height:60px;
+}
+.content2_right{
+    display: flex;
+    flex-direction:row;
+    margin-top: 40px;
+}
+.content2_right img{
+    width:15px;
+    height:15px;
+    margin-top: 0;
+}
+.content2_right :nth-child(n){
+    margin-right:10px;
+}
+.content2_right :nth-child(1){
+    margin-left: 65px;
+}
+.third{
+    width:1200px;
+    height:100px;
+    display: flex;
+    flex-direction:row;
+    position: relative;
+}
+.three{
+    width:70px;
+    height:70px;
+    position: absolute;
+    left:150px;
+    margin-top: 10px;
+}
+.contents3{
+    width:800px;
+    height:100px;
+    display: flex;
+    flex-direction:column;
+    position: absolute;
+    left:230px;
+    margin-top: 10px;
+}
+.content3_top{
+    width:800px;
+    height:20px;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+.content3_top :nth-child(n){
+    width:80px;
+    height:20px;
+    font-size: 13px;
+    color:#ffcd2d;
+}
+.content3_top :nth-child(2){
+    color: black;
+}
+.content3_bottom{
+    width:800px;
+    height:60px;
+    display: flex;
+    flex-direction:row;
+    font-size: 13px;
+    color: black;
+}
+.content3_left{
+    width:600px;
+    height:60px;
+}
+.content3_right{
+    display: flex;
+    flex-direction:row;
+    margin-top: 40px;
+}
+.content3_right img{
+    width:15px;
+    height:15px;
+    margin-top: 0;
+}
+.content3_right :nth-child(n){
+    margin-right:10px;
+}
+.content3_right :nth-child(1){
+    margin-left: 65px;
+}
+.paging{
+    width:400px;
+    height:45px;
+    display: flex;
+    flex-direction:row;
+    margin: 0 auto;  
+}
+.paging div{
+    width:25px;
+    height: 25px;
+    background:rgb(231, 229, 229);
+    border-radius: 50%;
+    color:darkgrey;
+    text-align: center;
+    line-height: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.paging a{
+    display: block;
+    width:25px;
+    height: 25px;
+    border-radius: 50%;
+    color:darkgrey;
+    text-decoration:none;
+}
+.paging :nth-child(3){
+    background:#ffcd2d;
+}
+.num a{
+    color:white;
+}
+.paging a:hover{
+    background:#ffcd2d;
+    color:white;
+}
+.paging div:hover{
+    background:#ffcd2d;
+    color:white;
+}
